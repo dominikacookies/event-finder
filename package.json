@@ -1,0 +1,29 @@
+{
+  "name": "event-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "apollo-server": "^3.0.1",
+    "axios": "^0.21.1",
+    "graphql": "^15.5.1",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominikacookies/event-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dominikacookies/event-finder/issues"
+  },
+  "homepage": "https://github.com/dominikacookies/event-finder#readme"
+}
