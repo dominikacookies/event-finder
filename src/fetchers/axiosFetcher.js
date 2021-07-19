@@ -1,8 +1,8 @@
 const axios = require("axios");
 
-const axiosFetcher = async (url) => {
+const axiosFetcher = async (url, params) => {
   try {
-    const response = await axios.get(url);
+    const response = await axios.get(url, { params });
 
     return response.data._embedded.events;
   } catch (err) {
