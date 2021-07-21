@@ -6,9 +6,18 @@ const events = async (_, { city, page, classificationName }) => {
     { city, page, classificationName }
   );
 
-  console.log(data);
+  const events = data.map((event) => {
+    return {
+      name: event.name,
+      date: event.dates.start.localDate,
+      time: event.dates.start.localTime,
+      venue: event._embedded.venues[0].name,
+      url: event.url,
+      images: event.images,
+    };
+  });
 
-  return data;
+  return events;
 };
 
 module.exports = events;

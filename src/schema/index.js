@@ -6,6 +6,9 @@ const typeDefs = gql`
   }
   type Event {
     name: String!
+    date: String!
+    time: String!
+    venue: String!
     url: String!
     images: [Image]
   }
